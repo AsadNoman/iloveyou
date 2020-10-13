@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+        window.onload = function(){
+           var refButton = document.getElementById("btnButton");
+                    document.getElementById("btnButton").style.background = "#FAB4DF";
+
+            refButton.onclick = function() {
+                
+                if(document.getElementById("btnButton").value == "SHAZIA"){
+                    document.getElementById("btnButton").value = "I AM";
+                    document.getElementById("btnButton").style.background = "#DDAFFA";
+                }
+                else if(document.getElementById("btnButton").value == "I AM"){
+                    document.getElementById("btnButton").value = "SORRY";
+                    document.getElementById("btnButton").style.background = "#ADC8FA";
+                }
+                else if (document.getElementById("btnButton").value == "SORRY"){
+                    document.getElementById("btnButton").value = "PLEASE";
+                    document.getElementById("btnButton").style.background = "#A0FAD1";
+                }
+                else if (document.getElementById("btnButton").value == "PLEASE"){
+                    document.getElementById("btnButton").value = "FORGIVE ME";
+                    document.getElementById("btnButton").style.background = "#C6FAA0";
+                }
+                else if (document.getElementById("btnButton").value == "FORGIVE ME"){
+                    document.getElementById("btnButton").value = "I LOVE YOU";
+                    document.getElementById("btnButton").style.background = "#FA9894";
+                }
+                
+            }
+        };
+    </script>
+
+<style>
+input{
+    align-text: center;
+    height: 100%;
+    width: 100%;
+    font-size: 500%;
+    letter-spacing: 30px;
+    word-spacing: 40px;
+ border: 0;
+ background: none;
+ box-shadow: none;
+ border-radius: 0px;
+}
+</style>
+</head>
+<body>
+    <form id="form1">
+    <div>
+        <input id="btnButton" type="button" value="SHAZIA"/>
+    </div>
+    </form>
+</body>
+</html>
