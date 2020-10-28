@@ -8,25 +8,13 @@
 
             refButton.onclick = function() {
                 
-                if(document.getElementById("btnButton").value == "SHAZIA"){
-                    document.getElementById("btnButton").value = "I AM";
+                if(document.getElementById("btnButton").value == "I"){
+                    document.getElementById("btnButton").value = "LOVE";
                     document.getElementById("btnButton").style.background = "#DDAFFA";
                 }
-                else if(document.getElementById("btnButton").value == "I AM"){
-                    document.getElementById("btnButton").value = "SORRY";
+                else if(document.getElementById("btnButton").value == "LOVE"){
+                    document.getElementById("btnButton").value = "YOU";
                     document.getElementById("btnButton").style.background = "#ADC8FA";
-                }
-                else if (document.getElementById("btnButton").value == "SORRY"){
-                    document.getElementById("btnButton").value = "PLEASE";
-                    document.getElementById("btnButton").style.background = "#A0FAD1";
-                }
-                else if (document.getElementById("btnButton").value == "PLEASE"){
-                    document.getElementById("btnButton").value = "FORGIVE ME";
-                    document.getElementById("btnButton").style.background = "#C6FAA0";
-                }
-                else if (document.getElementById("btnButton").value == "FORGIVE ME"){
-                    document.getElementById("btnButton").value = "I LOVE YOU";
-                    document.getElementById("btnButton").style.background = "#FA9894";
                 }
                 
             }
@@ -51,7 +39,7 @@ input{
 <body>
     <form id="form1">
     <div>
-        <input id="btnButton" type="button" value="SHAZIA"/>
+        <input id="btnButton" type="button" value="I"/>
     </div>
     </form>
 </body>
